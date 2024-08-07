@@ -21,6 +21,15 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/uploadfile/page.js",
+    "src/app/uploader/page.jsx",
+    "src/app/signpad/page.tsx",
+    "../bin/signature/page.tsx"
+  ],
   "exclude": ["node_modules"]
 }

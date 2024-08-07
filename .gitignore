@@ -34,3 +34,24 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# env
+.env.local
+.env
+#api
+#setup
+Configuration
+AWS S3 Storage
+Create an AWS Account: If you don't already have an AWS account, create one at AWS.
+Create S3 Bucket: Create an S3 bucket in your AWS account.
+Pinecone API
+Create Pinecone Account: If you don't have a Pinecone account, create one at Pinecone.
+Get Pinecone API Key: Obtain your Pinecone API key from your Pinecone account.
+Environment Variables
+Set the following environment variables in a .env file or your system environment.
+
+
+
+npm i 
+npm run dev

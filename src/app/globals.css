@@ -2,32 +2,308 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.App {
+  text-align: center;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
 
+
+#websiteTitle {
+  /* Your styles here */
+  font-family: 'Your Font Name', sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #333;
+}
+/* App.css */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.opacity-10 {
+  opacity: 0.1;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
+
+.text-gray-900 {
+  color: #1a202c;
+}
+
+.font-sans {
+  font-family: sans-serif;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.shadow {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.space-x-6 > :not(template) ~ :not(template) {
+  --space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--space-x-reverse)));
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
+.hover\:text-gray-500:hover {
+  color: #6b7280;
+}
+
+.bg-orange-500 {
+  background-color: #ed8936;
+}
+
+.hover\:bg-orange-600:hover {
+  background-color: #dd6b20;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-12 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.space-y-12 > :not(template) ~ :not(template) {
+  --space-y-reverse: 0;
+  margin-top: calc(3rem * calc(1 - var(--space-y-reverse)));
+  margin-bottom: calc(3rem * var(--space-y-reverse));
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.lg\:flex-row {
+  flex-direction: row;
+}
+
+.lg\:space-y-0 {
+  --space-y-reverse: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.lg\:space-x-12 > :not(template) ~ :not(template) {
+  --space-x-reverse: 0;
+  margin-right: calc(3rem * var(--space-x-reverse));
+  margin-left: calc(3rem * calc(1 - var(--space-x-reverse)));
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.lg\:text-left {
+  text-align: left;
+}
+
+.font-bold {
+  font-weight: 700;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.text-gray-700 {
+  color: #4a5568;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
+.hover\:bg-orange-600:hover {
+  background-color: #dd6b20;
+}
+
+.relative {
+  position: relative;
+}
+
+.z-10 {
+  z-index: 10;
+}
+.water-drop-animation {
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Add transform transition */
+  position: relative; /* Add relative positioning */
+}
+
+.water-drop-animation::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px; /* Adjust thickness as needed */
+  background: linear-gradient(to right, #ff0000, #00ff00, #0000ff); /* Add your desired gradient */
+  animation: lineAnimation 2s infinite linear; /* Apply animation */
+}
+
+@keyframes lineAnimation {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
   }
 }
+@keyframes upDownAnimation {
+  0% {
+    transform: translateY(-5px);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Apply animation to navigation links */
+.nav-link-animation {
+  animation: upDownAnimation 2s infinite;
+}
+/* HotelPage.css */
+
+/* Add Unsplash image URLs */
+.section-with-stars {
+  background-image: url('https://source.unsplash.com/1600x900/?stars');
+}
+
+.section-with-moons {
+  background-image: url('https://source.unsplash.com/1600x900/?moons');
+}
+
